@@ -46,7 +46,7 @@ const ShreeDay = ({ chartData }) => {
       <tr key={item1.id}>
         {item1.data.map((nestedItem) => {
           const combine = `${
-            nestedItem.relatedData?.[0]?.winningDigitFamily} ${nestedItem.relatedData?.[1]?.winningDigitFamily}`;
+            nestedItem.relatedData?.[0]?.winningDigitFamily}${nestedItem.relatedData?.[1]?.winningDigitFamily}`;
           return (
             <td key={nestedItem.id}>
               <div className="kalyan-chart-number-black">
