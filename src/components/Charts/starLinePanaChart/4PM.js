@@ -19,8 +19,8 @@ const ShreeDevi = ({ chartData }) => {
           </tr>
         </thead>
         <tbody>
-        {Object.entries(Four).map(([week, days], index) => {
-            let splitDate = week.split(" ")
+          {Object.entries(Four).map(([week, days], index) => {
+            let splitDate = week.split(" ");
             return (
               <>
                 <tr key={index}>
@@ -65,11 +65,10 @@ const ShreeDevi = ({ chartData }) => {
                     </td>
                   ))}
                 </tr>
-            
               </>
             );
           })}
-              {chartData &&
+          {chartData &&
             chartData.map((item1) => (
               <tr key={item1.id}>
                 <td className="cc td-width-13">

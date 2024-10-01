@@ -21,15 +21,17 @@ const ShreeDevi = ({ chartData }) => {
         <tbody>
         {Object.entries(INDRANIGHT).map(([week, days], index) => {
             let splitDate = week.split(" ");
+console.log("splitDate" ,splitDate);
 
             return (
               <tr key={index}>
                 <td className="cc td-width-13">
                   <div className="pana-chart-main">
                     <span className="result_date">
-                      {fa_time(splitDate[0])} <br/>
+                      {week}
+                      {/* {fa_time(splitDate[0])} <br/>
                       {splitDate[1]} <br/>
-                      {fa_time(splitDate[2])}
+                      {fa_time(splitDate[2])} */}
                     </span>
                   </div>
                 </td>
