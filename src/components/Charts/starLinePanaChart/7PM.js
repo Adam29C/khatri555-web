@@ -1,5 +1,6 @@
 import { Seven } from "./Chart.config";
 import { redPana } from "../JodiCharts/Chart.config";
+import { fa_time } from "../../Helpers/getWeekDays";
 const ShreeDevi = ({ chartData }) => {
   return (
     <div>
@@ -17,46 +18,55 @@ const ShreeDevi = ({ chartData }) => {
           </tr>
         </thead>
         <tbody>
-        {Object.entries(Seven).map(([week, days], index) => (
-            <tr key={index}>
-              <td className="cc td-width-13">
-                <div className="pana-chart-main">
-                  <span className="result_date">{week}</span>
-                </div>
-              </td>
-
-              {Object.entries(days).map(([day, values], id) => (
-                <td key={id} className="cc">
-                  <div className="kalyan-chart-number-black">
-                    <div className="kalyan-chart-number-black">
-                      <span
-                        className={`cp ${
-                          redPana
-                            .map((j) => parseInt(j))
-                            .includes(parseInt(values[0]))
-                            ? "text-danger"
-                            : "text-dark"
-                        }`}
-                      >
-                        {values[0]}
-                      </span>
-                      <span
-                        className={`cp ${
-                          redPana
-                            .map((j) => parseInt(j))
-                            .includes(parseInt(values[0]))
-                            ? "text-danger"
-                            : "text-dark"
-                        }`}
-                      >
-                        {values[1]}
+        {Object.entries(Seven).map(([week, days], index) => {
+            let splitDate = week.split(" ");
+            return (
+              <>
+                <tr key={index}>
+                  <td className="cc td-width-13">
+                    <div className="pana-chart-main">
+                      <span className="result_date">
+                        {fa_time(splitDate[0])} <br />
+                        {splitDate[1]} <br />
+                        {fa_time(splitDate[2])}
                       </span>
                     </div>
-                  </div>
-                </td>
-              ))}
-            </tr>
-          ))}
+                  </td>
+
+                  {Object.entries(days).map(([day, values], id) => (
+                    <td key={id} className="cc">
+                      <div className="kalyan-chart-number-black">
+                        <div className="kalyan-chart-number-black">
+                          <span
+                            className={`cp ${
+                              redPana
+                                .map((j) => parseInt(j))
+                                .includes(parseInt(values[0]))
+                                ? "text-danger"
+                                : "text-dark"
+                            }`}
+                          >
+                            {values[0]}
+                          </span>
+                          <span
+                            className={`cp ${
+                              redPana
+                                .map((j) => parseInt(j))
+                                .includes(parseInt(values[0]))
+                                ? "text-danger"
+                                : "text-dark"
+                            }`}
+                          >
+                            {values[1]}
+                          </span>
+                        </div>
+                      </div>
+                    </td>
+                  ))}
+                </tr>
+              </>
+            );
+          })}
               {chartData &&
             chartData.map((item1) => (
               <tr key={item1.id}>
