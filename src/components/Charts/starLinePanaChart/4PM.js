@@ -1,7 +1,7 @@
 import { Four } from "./Chart.config";
 import { redPana } from "../JodiCharts/Chart.config";
 import { fa_time } from "../../Helpers/getWeekDays";
-s
+
 const ShreeDevi = ({ chartData }) => {
   return (
     <div>
