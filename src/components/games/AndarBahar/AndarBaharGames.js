@@ -53,10 +53,10 @@ const StartLine = () => {
     <div>
       <div className="available-component">
         <div className="heding-sec m-4 d-flex text-center justify-content-center align-items-center">
-          <img src={star} alt="" />
+          <img src={star} alt="khatri555.com" />
           <h5 className="mb-0 ms-2 me-2 font-700">RATAN JACKPOT GAMES</h5>
 
-          <img src={star} alt="" />
+          <img src={star} alt="khatri555.com" />
         </div>
         <div className="container">
           <div className="row">
