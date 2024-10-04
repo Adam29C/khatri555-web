@@ -22,7 +22,7 @@ const GameRateSection = () => {
             <img
               className="card-img-top"
               src=".../100px180/"
-              alt="Card image cap"
+              alt="https://khatri555.com/Card image cap"
             />
             <div className="card-body">
               <h5 className="card-title">Card title</h5>
@@ -40,14 +40,14 @@ const GameRateSection = () => {
 
       <div className="game-rate-container">
         <div className="-custom m-4 d-flex flex-column text-center justify-content-center align-items-center">
-          {/* <img src={doller} alt="" /> */}
+          {/* <img src={doller} alt="https://khatri555.com/" /> */}
           <div className="main-title-text">
             <span className="title-text">Game Rates</span>
           </div>
           <h1 className="mb-0 ms-2 me-2 font-700">
             We Have Best Game Rates <br /> For You
           </h1>
-          {/* <img src={doller} alt="" /> */}
+          {/* <img src={doller} alt="https://khatri555.com/" /> */}
         </div>
 
         <div className="row">
@@ -57,7 +57,7 @@ const GameRateSection = () => {
               className="Card_Size rounded-3 border border-1 p-2 m-1"
             >
               <div className="d-flex align-items-center">
-                <img src={infinity} alt="" className="mx-2 img-hover-rotate img-hover-rotate " />
+                <img src={infinity} alt="https://khatri555.com/" className="mx-2 img-hover-rotate img-hover-rotate " />
                 <h5 className="mx-1 heading">{items.gameName}</h5>
               </div>
               <div className="d-flex">

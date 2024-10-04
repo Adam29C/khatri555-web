@@ -33,7 +33,7 @@ const Charts_Container = ({ title, data, link, responsive_Class }) => {
                   <div className=" d-flex align-items-center ">
                     <img
                       src={infinity}
-                      alt=""
+                      alt="https://khatri555.com/"
                       className="mx-2 img-hover-rotate "
                     />
                     <h4 className="mx-4">
@@ -70,7 +70,7 @@ const Charts_Container = ({ title, data, link, responsive_Class }) => {
                     <div className=" d-flex align-items-center ">
                       <img
                         src={infinity}
-                        alt=""
+                        alt="https://khatri555.com/"
                         className="mx-2 img-hover-rotate "
                       />
                       <h4 className="mx-4">

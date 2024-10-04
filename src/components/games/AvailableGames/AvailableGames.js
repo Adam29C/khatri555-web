@@ -71,9 +71,9 @@ import { downloadAPK } from "../../Helpers/DownloadAPK";
 //     <>
 //       <div className="available-component">
 //         <div className="heding-sec heading-sec-custom m-4 d-flex text-center justify-content-center align-items-center">
-//           <img src={star} alt="" />
+//           <img src={star} alt="https://khatri555.com/" />
 //           <h1 className="mb-0 ms-2 me-2 font-700">Available Games</h1>
-//           <img src={star} alt="" />
+//           <img src={star} alt="https://khatri555.com/" />
 //         </div>
 
 //         <div className="container">

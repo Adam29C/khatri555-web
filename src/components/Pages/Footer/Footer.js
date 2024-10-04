@@ -40,7 +40,7 @@ const Footer = () => {
           <div className="row">
             <div className="col-md-6 d-flex flex-column">
               <div className=" d-flex">
-                <img src={logo} className="img-fluid footer-image float-left" alt="" />
+                <img src={logo} className="img-fluid footer-image float-left" alt="https://khatri555.com/" />
               </div>
 
               <p className="footer-text f-size">
@@ -70,8 +70,8 @@ const Footer = () => {
 
               </div>
               <div className="footer-img-sec">
-              <img className="img1" src={img1} alt="" />
-              <img className="img2" src={img2} alt="" />
+              <img className="img1" src={img1} alt="https://khatri555.com/" />
+              <img className="img2" src={img2} alt="https://khatri555.com/" />
               
               
               </div>

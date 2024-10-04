@@ -76,7 +76,7 @@ const Navbar = () => {
 const Logo = () => {
   return (
     <Link className="nav-link  active" aria-current="page" to="/">
-      <img className="logo_navbar img-fluid" src={headerLog} alt="Logo" />
+      <img className="logo_navbar img-fluid" src={headerLog} alt="https://khatri555.com/Logo" />
     </Link>
   );
 };
