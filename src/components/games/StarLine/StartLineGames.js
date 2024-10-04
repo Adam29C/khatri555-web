@@ -54,54 +54,13 @@ const Pana_Chart = () => {
   const getResponseData = async () => {
 
     if (location.state.title != "allratanstarline") {
-      const req = nameRejext(location.state.title);
+      // const req = nameRejext(location.state.title);
+    const req = location.state.id;
+
       const res = await GetAllCharts(GET_ALL_STARLINE_GAME_PANA_CHART, req);
       setgetData(res);
     }
 
-    // if (res.status) {
-    //   const convertedData = {
-    //     data: [],
-    //   };
-
-    //   res.data.forEach((weekData) => {
-    //     const resultDates = weekData.data.map(
-    //       (item) => new Date(item.resultDate)
-    //     );
-
-    //     const week = {
-    //       weekStartDay: getActualDateFormate(weekData.startDate),
-    //       weekEndDay: getActualDateFormate(weekData.endDate),
-    //       data: [],
-    //     };
-
-    //     let currentResultDate = "";
-    //     let relatedData = [];
-
-    //     weekData.data.forEach((item) => {
-    //       if (item.resultDate !== currentResultDate) {
-    //         if (currentResultDate !== "") {
-    //           week.data.push({
-    //             resultDate: currentResultDate,
-    //             relatedData: relatedData,
-    //           });
-    //         }
-    //         currentResultDate = item.resultDate;
-    //         relatedData = [];
-    //       }
-    //       relatedData.push(item);
-    //     });
-
-    //     week.data.push({
-    //       resultDate: currentResultDate,
-    //       relatedData: relatedData,
-    //     });
-
-    //     convertedData.data.push(week);
-    //   });
-
-    //   setgetData(convertedData);
-    // }
   };
   useEffect(() => {
     getResponseData();

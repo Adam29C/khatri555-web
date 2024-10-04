@@ -200,7 +200,7 @@ const Section4 = ({ GameData, title, showPana }) => {
                           to={`/pana-chart/${data?.providerName
                             .toLowerCase()
                             .replace(/\s+/g, "")}/pana-chart`}
-                          state={{ title: data?.providerName }}
+                          state={{ title: data?.providerName , id :data._id  }}
                           className="chat-btn a-tag-css"
                         >
                           <span>Pana Chart</span>
@@ -212,7 +212,7 @@ const Section4 = ({ GameData, title, showPana }) => {
                         to={`/jodi-chart/${data?.providerName
                           .toLowerCase()
                           .replace(/\s+/g, "")}/jodi-chart`}
-                        state={{ title: data?.providerName }}
+                        state={{ title: data?.providerName , id :data._id   }}
                         className="chat-btn a-tag-css ml-10px"
                       >
                         <span>Jodi Chart</span>

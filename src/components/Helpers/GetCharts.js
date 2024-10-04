@@ -1,10 +1,10 @@
 import { nameRejext } from "./StringRejex";
 import { fa_time } from "./getWeekDays";
 
-export const GetAllCharts = async (apiEndPOint, title) => {
-  const req = nameRejext(title);
+export const GetAllCharts = async (apiEndPOint, id ) => {
+  // const req = nameRejext(title);
 
-  const res = await apiEndPOint({ name: req });
+  const res = await apiEndPOint({ id: id });
   if (res.status) {
     const convertedData = {
       data: [],
@@ -24,7 +24,7 @@ export const GetAllCharts = async (apiEndPOint, title) => {
 
       let currentResultDate = "";
       let relatedData = [];
-      
+
       weekData.data.forEach((item) => {
         if (item.resultDate !== currentResultDate) {
           if (currentResultDate !== "") {

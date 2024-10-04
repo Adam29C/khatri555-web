@@ -178,7 +178,7 @@ const StartLine = () => {
                       to={`/starline/${data?.providerName
                         .toLowerCase()
                         .replace(/\s+/g, "")}`}
-                      state={{ title: data?.providerName }}
+                      state={{ title: data?.providerName ,  id :data._id   }}
                       className="chat-btn"
                       style={{ textDecoration: "none" }}
                     >

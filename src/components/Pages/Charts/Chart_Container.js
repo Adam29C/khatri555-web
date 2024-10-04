@@ -76,7 +76,7 @@ const Charts_Container = ({ title, data, link, responsive_Class }) => {
                       <h4 className="mx-4">
                         <Link
                           to={Details(link, data1.providerName)}
-                          state={{ title: data1.providerName }}
+                          state={{ title: data1.providerName , id :data1._id  }}
                           className="text-decoration-none primary-color"
                         >
                           {data1.providerName.toUpperCase()}

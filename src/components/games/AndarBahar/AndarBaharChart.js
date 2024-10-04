@@ -30,7 +30,6 @@ const Andar_Bahar_Chart = (props) => {
   const navigate = useNavigate();
   const location = useLocation();
 
-
   const [getData, setgetData] = useState([]);
 
   const handleClick = () => {
@@ -50,53 +49,12 @@ const Andar_Bahar_Chart = (props) => {
 
   const getResponseData = async () => {
     if (location.state.title != "allratanjackpot") {
-      const req = nameRejext(location.state.title);
+      // const req = nameRejext(location.state.title);
+      const req = location.state.id;
+
       const res = await GetAllCharts(GET_JACKPOT_JODI_CHART, req);
       setgetData(res);
     }
-    // if (res.status) {
-    //   const convertedData = {
-    //     data: [],
-    //   };
-
-    //   res.data.forEach((weekData) => {
-    //     const resultDates = weekData.data.map(
-    //       (item) => new Date(item.resultDate)
-    //     );
-
-    //     const week = {
-    //       weekStartDay: getActualDateFormate(weekData.startDate),
-    //       weekEndDay: getActualDateFormate(weekData.endDate),
-    //       data: [],
-    //     };
-
-    //     let currentResultDate = "";
-    //     let relatedData = [];
-
-    //     weekData.data.forEach((item) => {
-    //       if (item.resultDate !== currentResultDate) {
-    //         if (currentResultDate !== "") {
-    //           week.data.push({
-    //             resultDate: currentResultDate,
-    //             relatedData: relatedData,
-    //           });
-    //         }
-    //         currentResultDate = item.resultDate;
-    //         relatedData = [];
-    //       }
-    //       relatedData.push(item);
-    //     });
-
-    //     week.data.push({
-    //       resultDate: currentResultDate,
-    //       relatedData: relatedData,
-    //     });
-
-    //     convertedData.data.push(week);
-    //   });
-
-    //   setgetData(convertedData);
-    // }
   };
   useEffect(() => {
     getResponseData();
@@ -114,13 +72,18 @@ const Andar_Bahar_Chart = (props) => {
               <h2 className="chart-header-font">
                 <strong className="color-dark-gray ">
                   Ratan Jackpot &nbsp;
-                  {location.state.title === 'allratanjackpot' ? "" : location.state.title}&nbsp; Chart
+                  {location.state.title === "allratanjackpot"
+                    ? ""
+                    : location.state.title}
+                  &nbsp; Chart
                 </strong>
               </h2>
               <p>
-                {location.state.title === 'allratanjackpot' ? "" : location.state .title}&nbsp; Pana Chart Satta Matka Record Old
-                History Historical Data Bracket Results Chart Online Live Book
-                Digits Numbers
+                {location.state.title === "allratanjackpot"
+                  ? ""
+                  : location.state.title}
+                &nbsp; Pana Chart Satta Matka Record Old History Historical Data
+                Bracket Results Chart Online Live Book Digits Numbers
               </p>
             </div>
 

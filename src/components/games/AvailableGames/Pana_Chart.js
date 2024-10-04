@@ -32,8 +32,6 @@ import INDRANIGHT from "../../Charts/PanaCharts/INDRANIGHT";
 import MAYADAY from "../../Charts/PanaCharts/MAYADAY";
 import MAYANIGHT from "../../Charts/PanaCharts/MAYANIGHT";
 
-
-
 import { GetAllCharts } from "../../Helpers/GetCharts";
 
 const Pana_Chart = () => {
@@ -58,7 +56,10 @@ const Pana_Chart = () => {
   };
 
   const getResponseData = async () => {
-    const req = nameRejext(location.state.title);
+    // const req = nameRejext(location.state.id);
+    const req = location.state.id;
+
+    // const res = await GET_ALL_GAMES_RESULT({ id: req });
     const res = await GetAllCharts(GET_ALL_GAMES_RESULT, req);
     setgetData(res);
   };
@@ -161,7 +162,7 @@ const Pana_Chart = () => {
               ) : nameRejext(location.state.title) ===
                 nameRejext("INDRANIGHT") ? (
                 <INDRANIGHT chartData={getData.data} />
-              )  : nameRejext(location.state.title) ===
+              ) : nameRejext(location.state.title) ===
                 nameRejext("INDRADAY") ? (
                 <INDRADAY chartData={getData.data} />
               ) : (

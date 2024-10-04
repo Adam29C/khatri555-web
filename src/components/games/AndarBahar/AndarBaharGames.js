@@ -215,7 +215,7 @@ const StartLine = () => {
                         to={`/andarbahar/${data.providerName
                           .toLowerCase()
                           .replace(/\s+/g, "")}`}
-                        state={{ title: data.providerName }}
+                        state={{ title: data.providerName  , id :data._id  }}
                         className="chat-btn a-tag-css"
                         
                       >

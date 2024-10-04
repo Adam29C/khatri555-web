@@ -42,7 +42,6 @@ const Charts = () => {
             data={getStarline}
             link="starline"
           />
-
           <Shree_Jackpot
             title="Ratan Jackpot"
             data={getJackpot}
