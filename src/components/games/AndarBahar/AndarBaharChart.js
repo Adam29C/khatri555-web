@@ -50,7 +50,9 @@ const Andar_Bahar_Chart = (props) => {
   const getResponseData = async () => {
     if (location.state.title != "allratanjackpot") {
       // const req = nameRejext(location.state.title);
-      const req = location.state.id;
+      // const req = location.state.id;
+    const req = location.state;
+
 
       const res = await GetAllCharts(GET_JACKPOT_JODI_CHART, req);
       setgetData(res);

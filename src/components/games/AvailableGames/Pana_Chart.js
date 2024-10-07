@@ -57,7 +57,8 @@ const Pana_Chart = () => {
 
   const getResponseData = async () => {
     // const req = nameRejext(location.state.id);
-    const req = location.state.id;
+    const req = location.state;
+
 
     // const res = await GET_ALL_GAMES_RESULT({ id: req });
     const res = await GetAllCharts(GET_ALL_GAMES_RESULT, req);

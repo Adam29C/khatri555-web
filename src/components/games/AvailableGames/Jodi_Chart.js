@@ -57,8 +57,9 @@ const Pana_Chart = () => {
 
   const getResponseData = async () => {
     var { startOfWeek, endOfWeek } = getWeekStartAndEndDates();
-    // const req = nameRejext(location.state.title);
-    const req = location.state.id;
+
+    // console.log('location.state' ,location.state) ;
+    const req = location.state;
 
     const res = await GetAllCharts(GET_ALL_JODI_CHART, req);
     setgetData(res);

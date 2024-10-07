@@ -55,7 +55,9 @@ const Pana_Chart = () => {
 
     if (location.state.title != "allratanstarline") {
       // const req = nameRejext(location.state.title);
-    const req = location.state.id;
+    // const req = location.state.id;
+    const req = location.state;
+
 
       const res = await GetAllCharts(GET_ALL_STARLINE_GAME_PANA_CHART, req);
       setgetData(res);
