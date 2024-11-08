@@ -1,5 +1,5 @@
 import React from "react";
-import { INDRADAY } from "./Chart.config";
+import { SUPREMEDAY } from "./Chart.config";
 import { redJodi } from "./Chart.config";
 
 // import { Data } from "../ShreeJackpot/Chart.config";
@@ -19,7 +19,7 @@ const ShreeDay = ({ chartData }) => {
           </tr>
         </thead>
         <tbody>
-          {INDRADAY.map((group, groupIndex) => (
+          {SUPREMEDAY.map((group, groupIndex) => (
             <tr key={groupIndex}>
               {group.map((item) => (
                 <td>

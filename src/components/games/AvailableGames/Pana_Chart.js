@@ -32,6 +32,9 @@ import INDRANIGHT from "../../Charts/PanaCharts/INDRANIGHT";
 import MAYADAY from "../../Charts/PanaCharts/MAYADAY";
 import MAYANIGHT from "../../Charts/PanaCharts/MAYANIGHT";
 
+import SUPREMEDAY from "../../Charts/PanaCharts/SUPREMEDAY";
+import SUPREMENIGHT from "../../Charts/PanaCharts/SUPREMENIGHT";
+
 import { GetAllCharts } from "../../Helpers/GetCharts";
 
 const Pana_Chart = () => {
@@ -58,7 +61,6 @@ const Pana_Chart = () => {
   const getResponseData = async () => {
     // const req = nameRejext(location.state.id);
     const req = location.state;
-
 
     // const res = await GET_ALL_GAMES_RESULT({ id: req });
     const res = await GetAllCharts(GET_ALL_GAMES_RESULT, req);
@@ -166,6 +168,12 @@ const Pana_Chart = () => {
               ) : nameRejext(location.state.title) ===
                 nameRejext("INDRADAY") ? (
                 <INDRADAY chartData={getData.data} />
+              ) : nameRejext(location.state.title) ===
+                nameRejext("SUPREMEDAY") ? (
+                <SUPREMEDAY chartData={getData.data} />
+              ) : nameRejext(location.state.title) ===
+                nameRejext("SUPREMENIGHT") ? (
+                <SUPREMENIGHT chartData={getData.data} />
               ) : (
                 ""
               )}

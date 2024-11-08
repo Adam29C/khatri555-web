@@ -32,6 +32,9 @@ import INDRANIGHT from "../../Charts/JodiCharts/INDRANIGHT";
 import MAYADAY from "../../Charts/JodiCharts/MAYADAY";
 import MAYANIGHT from "../../Charts/JodiCharts/MAYANIGHT";
 
+import SUPREMEDAY from "../../Charts/JodiCharts/SUPREMEDAY";
+import SUPREMENIGHT from "../../Charts/JodiCharts/SUPREMENIGHT";
+
 import { GetAllCharts } from "../../Helpers/GetCharts";
 
 const Pana_Chart = () => {
@@ -154,8 +157,7 @@ const Pana_Chart = () => {
               ) : nameRejext(location.state.title) ===
                 nameRejext("MAYANIGHT") ? (
                 <MAYANIGHT chartData={getData.data} />
-              ) : nameRejext(location.state.title) ===
-                nameRejext("MAYADAY") ? (
+              ) : nameRejext(location.state.title) === nameRejext("MAYADAY") ? (
                 <MAYADAY chartData={getData.data} />
               ) : nameRejext(location.state.title) ===
                 nameRejext("INDRANIGHT") ? (
@@ -164,9 +166,15 @@ const Pana_Chart = () => {
                 nameRejext("INDRAMORNING") ? (
                 <INDRAMORNING chartData={getData.data} />
               ) : nameRejext(location.state.title) ===
-              nameRejext("INDRADAY") ? (
-              <INDRADAY chartData={getData.data} />
-            ) : (
+                nameRejext("INDRADAY") ? (
+                <INDRADAY chartData={getData.data} />
+              ) : nameRejext(location.state.title) ===
+                nameRejext("SUPREMEDAY") ? (
+                <SUPREMEDAY chartData={getData.data} />
+              ) : nameRejext(location.state.title) ===
+                nameRejext("SUPREMENIGHT") ? (
+                <SUPREMENIGHT chartData={getData.data} />
+              ) : (
                 ""
               )}
 
