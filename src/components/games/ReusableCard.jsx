@@ -1,18 +1,14 @@
-import React, { useEffect, useState } from "react";
+import React, {  useState } from "react";
 import "../assets/css/Section4.css";
 import { Link } from "react-router-dom";
 import Modal from "react-bootstrap/Modal";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Table from "react-bootstrap/Table";
-import { GET_ALL_GAMES } from "../service/admin.service";
 import star from "../../images/Star-Icon.svg";
 import { downloadAPK } from "../Helpers/DownloadAPK";
 
 const Section4 = ({ GameData, title, showPana }) => {
-  //   const [getData, setgetData] = useState([]);
   const [ModalData, setModalData] = useState([]);
-  const [AppUrl, setAppUrl] = useState("");
-  //  Modal
 
   const [show, setShow] = useState(false);
   const [RowData, setRowData] = useState([]);
@@ -23,16 +19,6 @@ const Section4 = ({ GameData, title, showPana }) => {
     setRowData(data);
   };
 
-  const getResponseData = async () => {
-    const res = await GET_ALL_GAMES();
-    if (res.status) {
-      //   setgetData(res.data);
-      setAppUrl(res.appInfo);
-    }
-  };
-  useEffect(() => {
-    getResponseData();
-  }, []);
 
   const showData = (data) => {
     const weekday = [

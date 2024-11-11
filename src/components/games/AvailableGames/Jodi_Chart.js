@@ -8,27 +8,22 @@ import { getWeekStartAndEndDates, fa_time } from "../../Helpers/getWeekDays";
 
 import MadhurDay from "../../Charts/JodiCharts/MadhurDay";
 import MadhurNight from "../../Charts/JodiCharts/MadhurNight";
-
 import MilanDay from "../../Charts/JodiCharts/MilanDay";
 import MilanNight from "../../Charts/JodiCharts/MilanNight";
-
 import RajdhaniDay from "../../Charts/JodiCharts/RajdhaniDay";
 import RajdhaniNight from "../../Charts/JodiCharts/RajdhaniNight";
-
 import Kalyan from "../../Charts/JodiCharts/Kalyan";
 import KalyanNight from "../../Charts/JodiCharts/KalyanNight";
-
 import TimeBazar from "../../Charts/JodiCharts/TimeBazar";
 import MainBazar from "../../Charts/JodiCharts/MainBazar";
-
 import ShreeDevi from "../../Charts/JodiCharts/ShreeDevi";
 import ShreeDeviNight from "../../Charts/JodiCharts/ShreeDeviNight";
-
 import MayaMorning from "../../Charts/JodiCharts/MayaMorning";
 
 import INDRADAY from "../../Charts/JodiCharts/INDRADAY";
 import INDRAMORNING from "../../Charts/JodiCharts/INDRAMORNING";
 import INDRANIGHT from "../../Charts/JodiCharts/INDRANIGHT";
+
 import MAYADAY from "../../Charts/JodiCharts/MAYADAY";
 import MAYANIGHT from "../../Charts/JodiCharts/MAYANIGHT";
 
@@ -60,9 +55,8 @@ const Pana_Chart = () => {
 
   const getResponseData = async () => {
     var { startOfWeek, endOfWeek } = getWeekStartAndEndDates();
-
-    // console.log('location.state' ,location.state) ;
     const req = location.state;
+
 
     const res = await GetAllCharts(GET_ALL_JODI_CHART, req);
     setgetData(res);
@@ -75,7 +69,6 @@ const Pana_Chart = () => {
     <>
       <div id="scroll-up"></div>
       <Navbar />
-
       <div className="container-fluid">
         <div className="row">
           <div className="text-center col-xl-12 col-q-12 col-md-12 col-sm-12 chart-header ">
