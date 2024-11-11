@@ -10160,7 +10160,8 @@ export const SUPREMEDAY = [
     { id: 464, value: "39" },
     { id: 465, value: "52" },
     { id: 466, value: "11" },
-    { id: 467, value: "**" },
+    { id: 465, value: "52" },
+
     { id: 468, value: "01" },
     { id: 469, value: "07" },
   ],
@@ -10237,7 +10238,7 @@ export const SUPREMEDAY = [
     { id: 525, value: "75" },
   ],
   [
-    { id: 526, value: "**" },
+    { id: 535, value: "08" },
     { id: 527, value: "23" },
     { id: 528, value: "34" },
     { id: 529, value: "62" },
