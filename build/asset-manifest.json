@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.2225d991.css",
-    "main.js": "/static/js/main.aa24d5cd.js",
+    "main.js": "/static/js/main.4bb6a875.js",
     "static/media/khatri_new_logo.svg": "/static/media/khatri_new_logo.00dfee743e6c2a111c1d95b4f821bf8a.svg",
     "static/media/BeGamble-Aware.svg": "/static/media/BeGamble-Aware.12a19f889a54e829693d36eab15b26be.svg",
     "static/media/green_khatri_logo.svg": "/static/media/green_khatri_logo.6d00055839b1f2644d8552afedd950bb.svg",
@@ -19,10 +19,10 @@
     "static/media/Mobile-Header-Wave.svg": "/static/media/Mobile-Header-Wave.5d5783373a45534a6976.svg",
     "static/media/infinit.svg": "/static/media/infinit.d28f5e82505a903099db4a9af321c37a.svg",
     "main.2225d991.css.map": "/static/css/main.2225d991.css.map",
-    "main.aa24d5cd.js.map": "/static/js/main.aa24d5cd.js.map"
+    "main.4bb6a875.js.map": "/static/js/main.4bb6a875.js.map"
   },
   "entrypoints": [
     "static/css/main.2225d991.css",
-    "static/js/main.aa24d5cd.js"
+    "static/js/main.4bb6a875.js"
   ]
 }
